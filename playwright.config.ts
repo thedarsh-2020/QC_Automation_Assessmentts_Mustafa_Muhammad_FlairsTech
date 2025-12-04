@@ -39,7 +39,15 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use:
+      { ...devices['Desktop Chrome'],
+        viewport: null,                     // Disable Playwright's default viewport
+        deviceScaleFactor: undefined,       // required when vewport is null
+        launchOptions:
+        {
+          args: ['--start-maximized']
+        },
+       },
     },
 
     /*

@@ -40,20 +40,17 @@ export default class registerPage extends basePage
 
     async selectBirthDay(day: number)
     {
-        await this.clickOnElement(this.birthDayDropDown);
-        await this.clickOnElement(this.birthDayDropDown.filter({hasText: day.toString()}))
+        await this.birthDayDropDown.selectOption(day.toString());
     }
 
     async selectBirthMonth(month: string)
     {
-        await this.clickOnElement(this.birthMonthDropDown);
-        await this.clickOnElement(this.birthMonthDropDown.filter({hasText: month}))
+        await this.birthMonthDropDown.selectOption(month.toString());
     }
 
     async selectBirthYear(year: number)
     {
-        await this.clickOnElement(this.birthYearhDropDown);
-        await this.clickOnElement(this.birthYearhDropDown.filter({hasText: year.toString()}))
+        await this.birthYearhDropDown.selectOption(year.toString());
     }
 
     async enterFirstName(firstName: string)
@@ -83,8 +80,7 @@ export default class registerPage extends basePage
 
     async selectCountry(country: string)
     {
-        await this.clickOnElement(this.countryDropDown);
-        await this.clickOnElement(this.countryDropDown.filter({hasText: country}))
+        await this.countryDropDown.selectOption(country.toString());
     }
 
     async enterState(name: string)
