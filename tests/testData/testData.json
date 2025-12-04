@@ -1,0 +1,18 @@
+{
+    "name"          : "Musta",
+    "email"         : "FL_Asses@gmail.com",
+    "password"      : "12345678",
+    "birth_day"     : 21,
+    "birth_month"   : "October",
+    "birth_year"    : 1993,
+    "firstname"     :"Mustafa",
+    "lastname"      :"Muhammad",
+    "company"       :"test",
+    "address1"      :"MoonCity",
+    "address2"      :"GesrSuez",
+    "country"       :"Canada",
+    "zipcode"       : 11311,
+    "state"         :"Cairo",
+    "city"          :"Cairo",
+    "mobile_number" : 1062945118
+}
